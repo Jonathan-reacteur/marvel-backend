@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "build",
     "test": "jest"
   },
   "keywords": [],
