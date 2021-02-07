@@ -5,7 +5,7 @@ const generateParamListComics = (param) => {
   if (!param) {
     return "";
   }
-  const { skip, limit, title } = param;
+  const { skip, limit, title, name } = param;
   let paramURL = "";
   if (limit) {
     paramURL += "&limit=" + limit;
@@ -15,6 +15,9 @@ const generateParamListComics = (param) => {
   }
   if (skip) {
     paramURL += "&skip=" + skip;
+  }
+  if (name) {
+    paramURL += "&name=" + name;
   }
   return paramURL;
 };
